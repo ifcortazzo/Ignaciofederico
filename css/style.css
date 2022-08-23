@@ -1,0 +1,68 @@
+
+/* https://www.w3schools.com/css/css_grid.asp */
+
+/* Backgroud de la pagina */
+
+ body {
+  background-image: url("/img/body/back1.png");
+  background-color: #160202;
+  background-repeat: no-repeat;
+ } 
+
+ .bg {
+  /* The image used */
+  background-image: url("/img/body/back1.png");
+
+  /* Full height */
+  height: 100%; 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+ h1 {
+  color: rgb(231, 182, 19);
+}
+
+
+ /* grilla */
+
+  .grilla-contenedor {
+    display: grid;
+    grid-template-columns: repeat(5,1fr);  
+  
+    background-repeat: no-repeat, repeat;
+    /* background-image: url("/img/img1.jpg") ; */
+    padding: 20px;
+    column-gap: 10px;
+    row-gap:10px;
+    grid-gap: 10px;
+    height: auto;
+    width: auto;
+    align-content: start;
+  }
+  
+  /* celdas de la grilla */
+
+  .celda-grilla {
+    background-color: transparent rgba(255, 255, 255, 0.8);
+    border: 5px transparent rgba(223, 226, 9, 0.8);
+    padding: 5px;
+    font-size: 10px;
+    text-align: center;
+    width: 100%;
+  }
+
+  /* Tamano de las imagenes */
+ 
+  img {
+    max-width: 360px;
+    max-height: 440px;
+  
+    object-fit: cover;
+  }
+
+
