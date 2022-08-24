@@ -1,4 +1,5 @@
 
+
 /* https://www.w3schools.com/css/css_grid.asp */
 
  /* esto no esta sirviendo para nada 
@@ -42,7 +43,7 @@
     max-height: 90%;
     max-width: 90%;
     align-content: start;
-    float: left;
+    
     padding: 15px;
     border: 1px solid red;
   
@@ -75,3 +76,7 @@
     display: table;
   }
   
+  .footer{
+  display: inline-block;
+  align-self: flex-end;
+  }
