@@ -1,12 +1,19 @@
 
 /* https://www.w3schools.com/css/css_grid.asp */
 
+ /* esto no esta sirviendo para nada 
+* {
+  box-sizing: border-box;
+}
+
 /* Backgroud de la pagina */
 
  body {
   background-image: url("/img/body/back1.png");
   background-color: #160202;
   background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
  } 
 
  .bg {
@@ -15,7 +22,6 @@
 
   /* Full height */
   height: 100%; 
-
   /* Center and scale the image nicely */
   background-position: center;
   background-repeat: no-repeat;
@@ -32,37 +38,40 @@
 
   .grilla-contenedor {
     display: grid;
-    grid-template-columns: repeat(5,1fr);  
-  
-    background-repeat: no-repeat, repeat;
-    /* background-image: url("/img/img1.jpg") ; */
-    padding: 20px;
-    column-gap: 10px;
-    row-gap:10px;
-    grid-gap: 10px;
-    height: auto;
-    width: auto;
+    grid-template-columns: repeat(5,1fr); 
+    max-height: 90%;
+    max-width: 90%;
     align-content: start;
+    float: left;
+    padding: 15px;
+    border: 1px solid red;
+  
   }
   
   /* celdas de la grilla */
 
   .celda-grilla {
-    background-color: transparent rgba(255, 255, 255, 0.8);
-    border: 5px transparent rgba(223, 226, 9, 0.8);
-    padding: 5px;
-    font-size: 10px;
-    text-align: center;
-    width: 100%;
+    max-height: 100%;
+    max-width: 80%;
+    float: left;
+    padding: 15px;
+    border: 1px solid rgb(72, 7, 250);
+    
+    content: "";
+    clear: both;
+    display: table;
+    
   }
 
-  /* Tamano de las imagenes */
- 
+  /* Tamano de las imagenes son responsive */
   img {
-    max-width: 360px;
-    max-height: 440px;
-  
-    object-fit: cover;
+    max-width: 100%;
+    height: auto;
   }
 
-
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
