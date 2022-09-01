@@ -9,6 +9,12 @@
 
 /* Backgroud de la pagina */
 
+*{
+text-align: center;
+
+}
+
+
  body {
   background-image: url("/img/body/back1.png");
   background-color: #160202;
@@ -41,7 +47,7 @@
     display: grid;
     grid-template-columns: repeat(5,1fr); 
     max-height: 90%;
-    max-width: 90%;
+  
     align-content: start;
     
     padding: 15px;
@@ -57,22 +63,23 @@
     float: left;
     padding: 15px;
     border: 1px solid rgb(72, 7, 250);
-    
+    margin-block: auto;
     content: "";
     clear: both;
     display: table;
     
+  }
+
+  #celda-cuadrante {
+    max-height: 25%;
+    max-width: 80%;
+    height: 100px;
+    width: 100%;
+    clear: both;
+    display: table;
   }
 
   /* Tamano de las imagenes son responsive */
-  img {
-    max-width: 100%;
-    height: auto;
-  }
-
-  .row::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
   
+
+ /*  Alt shift a comenta */
