@@ -14,6 +14,14 @@ text-align: center;
 
 }
 
+/* Tamano de las imagenes son responsive */
+img{
+  
+  max-width: 100%;
+  max-height: 100%;
+    }
+  
+
 
  body {
   background-image: url("/img/body/back1.png");
@@ -46,7 +54,7 @@ text-align: center;
   .grilla-contenedor {
     display: grid;
     grid-template-columns: repeat(5,1fr); 
-    max-height: 90%;
+    max-height: 70%;
   
     align-content: start;
     
@@ -69,22 +77,34 @@ text-align: center;
     display: table;
     
   }
+  .celda-cuadrante {
+    max-height: 60%;
+    max-width: auto;
+    text-align: center;
+    display: flex;
+}
+    
+.celda-cuadrante2{
+  
+  max-height: 60%;
+  max-width: auto;
+  text-align: center;
+  display: flex;
+  
 
-  #celda-cuadrante {
-    max-height: 25%;
-    max-width: 80%;
-    height: 100px;
-    width: 100%;
-    clear: both;
-    display: table;
-  }
+}
 
-  /* Tamano de las imagenes son responsive */
-  img{
-height: 80%;
-width: auto;
-max-width: 100%;
-max-height: 100%;
-  }
+
+
+
+
+
+
+
+
+
+
+
+  
 
  /*  Alt shift a comenta */
